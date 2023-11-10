@@ -31,11 +31,9 @@ public final class MonthSorterNested implements MonthSorter {
     }
 
     public static class SortByMonthOrder implements Comparator<String> {
-
         public int compare(String o1, String o2) {
             return Month.fromString(o1).ordinal() - Month.fromString(o2).ordinal();
         }
-
     }
 
     public static class SortByDate implements Comparator<String> {
